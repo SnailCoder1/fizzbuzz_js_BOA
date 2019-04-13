@@ -1,6 +1,8 @@
-require('../spec.helper');
+const {expect} = require('chai')
+const BrowserHelpers = require('e2e_training_wheels')
+const browser = new BrowserHelpers()
 
-context('Your Description of the test scenario', () => {
+describe('User can input a value and get FizzBuzz results', () => {
   // Initialize a browser and visit the server's root path
   before(async () => {
     await browser.init()
@@ -18,7 +20,14 @@ context('Your Description of the test scenario', () => {
   });
 
   // Example test
-  it('renders the correct page title', async () => {
-    expect(await browser.page.title()).to.eql('Puppeteer Mocha Scaffold');
+    //it('renders the correct page title', async () => {
+     // expect(await browser.page.title()).to.eql('Puppeteer Mocha Scaffold');
+    //});
+
+it('clicking on the "Check" button', async () => {
+    await browser.fillIn("input[id='value']", { with:  "3" })
+    await browser.clickOnButton("input[value='Check']")
+    let content = await browser.getContent("[id='display_answer']")
+    expect(content).to.eql('Fizz');
   });
 });

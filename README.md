@@ -11,3 +11,9 @@ Use best of your knowledge to please explain why we are placing the let fizzBuzz
  #4. 
  In your README to the best of your knowledge please explain why we are moving (number % 5 === 0) to the top?
 
+#5.
+ In your README to the best of your knowledge please explain the difference between feature and unit test
+
+#6. 
+In your README to the best of your knowledge please explain what this following code does
+
