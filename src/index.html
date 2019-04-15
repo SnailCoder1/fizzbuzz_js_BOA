@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <script src="./js/fizz-buzz.js"></script>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The FizzBuzz Challenge</title>
+    <link rel="stylesheet" type="text/css" href="tailwind.js"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-
         <br><br> <h1>The FizzBuzz Challenge</h1> <br> <br>
+
+        <img src="img/ghost.jpg" alt="Image unavaliable" srcset=""> <br> <br>
+
     <!-- Place your content here -->
     <div>
         <input type="text" id="value">
-        <input type="submit" value="Check" id="button"> 
-        <div id="display_answer"></div>
+        <input type="submit" value="Check" id="button"
+        class="bg-transparent hover:bg-blue text-blue-dark hover:text-white"> 
+        <br>      <br>    
+        <div id="display_answer">
 
-
+        </div>
     </div>
-    <script src="./js/fizz-buzz.js"></script>
- 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             let button = document.getElementById('button')
@@ -33,5 +37,6 @@
             })
         })
     </script>
+    <footer>Created by you with pure love.</footer>
 </body>
 </html>

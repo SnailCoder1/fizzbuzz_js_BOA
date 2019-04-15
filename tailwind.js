@@ -977,4 +977,11 @@ module.exports = {
     separator: ':',
   },
 
-}
+  background: {
+    backgroundAttachment,url(ghost.jpg),
+    height: 100vh,
+    background-size: cover,
+    background-position: center
+  }
+
+
