@@ -2,50 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
-    <!--<script src="./js/fizz-buzz.js"></script>-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The FizzBuzz Challenge</title>
-    <link rel="stylesheet" type="text/css" href="tailwind.js"/>
-
-    <!--<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
-
-        <script src="./src/js/main.js"></script>
-<style>    
-
-body {  
-
-background-image: -moz-linear-gradient() url('src/Image/ghost.jpg') alt='Image unavaliable'
-
-}
-
-</style>
-
 </head>
-
-
 <body>
 
-    <!-- Place your content here -->
-<input type="text" id="value">
-<input type="submit" value="Check" id="button">
-<div id="display_answer"></div>
+    <input type="text" id="value">
+    <input type="submit" value="Check" id="button">
+    <div id="display_answer"></div>
 
-<script src="./js/fizz-buzz.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        let button = document.getElementById('button')
-        let displayDiv = document.getElementById('display_answer')
-        button.addEventListener('click', () =>{
-            let value = document.getElementById('value').value
-            let fizzBuzz = new FizzBuzz
-            let result = fizzBuzz.check(value)
-           // console.log(result)
-            displayDiv.innerHTML = result;
+
+<script src="./src/js/fizz-buzz.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let button = document.getElementById('button')
+            let displayDiv = document.getElementById('display_answer')
+            button.addEventListener('click', () =>{
+                let value = document.getElementById('value').value
+                let fizzBuzz = new FizzBuzz
+                let result = fizzBuzz.check(value)
+                console.log(result)
+                displayDiv.innerHTML = result;
+            })
         })
-    })
-</script>
-
-</body>
+    </script>
+</body> 
 </html>
