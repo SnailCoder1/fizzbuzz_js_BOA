@@ -5,27 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The FizzBuzz Challenge</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> 
+
+  <nav class="bg-blue-500 p-10">
+    <div class="text-center  text-white center mr-10  ">
+      <span class="font-semibold text-xl tracking-tight text-center">The Fizz Buzz Game</span>
+    </div>
+  </nav>
+
 </head>
+  <script src="src/js/fizz-buzz.js"></script>
 <body>
 
-    <input type="text" id="value">
-    <input type="submit" value="Check" id="button">
-    <div id="display_answer"></div>
+  <br><h3 class="text-center">| if Y / 3 = Fizz| | if Y / 5 = Buzz | | if Y / 15 = FizzBuzz |</h3>
+  <h3 class="text-center">| else return Y=Y if the rules are not met. |</h3><br> <br>
 
+  <div class="container mx-auto centered">
+      <div class="text-cente">
+        <input class="w-full bg-white-400 text-gray-800 border border-blue-600 py-3 px-3 mb-2" placeholder="Type in a number here and have fun!" type='text' id="value" Enter/>
+      </div>
+  </div><br> 
 
-<script src="./src/js/fizz-buzz.js"></script>
-    <script>
+  <div class="text-center" > 
+    <input class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8" type="button" value="Check" id="button" Result [ENTER]>
+  </div>
+
+  <div class="text-center" id="display_answer"></div>
+      <script>
         document.addEventListener('DOMContentLoaded', () => {
-            let button = document.getElementById('button')
-            let displayDiv = document.getElementById('display_answer')
-            button.addEventListener('click', () =>{
-                let value = document.getElementById('value').value
-                let fizzBuzz = new FizzBuzz
-                let result = fizzBuzz.check(value)
-                console.log(result)
-                displayDiv.innerHTML = result;
-            })
+          let button = document.getElementById('button')
+          let displayDiv = document.getElementById('display_answer')
+          button.addEventListener('click', () =>{
+            let value = document.getElementById('value').value
+            let fizzBuzz = new FizzBuzz
+            let result = fizzBuzz.check(value)
+            console.log(result)
+            displayDiv.innerHTML = result;
+          })
         })
-    </script>
-</body> 
+      </script>
+  </body> 
 </html>
